@@ -20,9 +20,12 @@ jobs:
 
     - name: Configure AWS Credentials
       run: |
-        export AWS_ACCESS_KEY_ID="{{ secrets.AWS_ACCESS_KEY_ID }}"
-        export AWS_SECRET_ACCESS_KEY="{{ secrets.AWS_SECRET_ACCESS_KEY }}"
-        export AWS_SESSION_TOKEN="I{{ secrets.AWS_SESSION_TOKEN }}"
+        export AWS_ACCESS_KEY_ID="ASIAU7GRATBDWHOTE2F7"
+        export AWS_SECRET_ACCESS_KEY="3McTARFOumLHmMe1ClRGL7E0R63UeRnegaTN6uaS"
+        export AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEE8aCXVzLWVhc3QtMSJHMEUCIQDnZGtwpV8lOMLdn7K8sAA2tkGcE2fmtJHRxrDsDJ3b9gIgPj9ZiJmq2vx3s5dik1ujmYmaM/cK+Hm1b3OJ5uAgKqkqlQMIx///////////ARABGgwzNDE4ODgyNDM3ODMiDAKt269e6tzEmoJtVyrpAtf3R6lpuL1vFEJRRlZRLn78U7oSl6POalkEwgliSbuK5JeI8LHq/9KNejd1Km2uw65ttJz6rk54aK32tl/zvJ1NEZMb/2Nt0nWfYV2NeRLnxNHdswA5IsTFakj7ohoEbMtNKumQUEgwLmBagALG2k6mkzRYP2olzJZLAPXN2go2NOyuWglAbJcUCLDjgAc+RHa02ir1lZ3HWmIJas7VTZi04IlxPOIIZh9uHBf+zzxAXPi5hsOi+82FnWN5bRfv10TQXWeF4Y+/u1A29p5Azsfm/9ynceXnAxGiwoo508sxFFEYd4d777o0GbUkVZx+7RSXssB+YVfliz6fq2fzMoLqC+moD+OxLBqfaC3TUmxIGiuKTXFhaGqA898lw9cUZfSR04E7CJWgHxfRWnbhMeLz5f62S3NGFK2Lv23lhIWW8QFTZUjBv/qccx63UVm057RPf+qlqLxDCovgq4y5UyYivd9maIe/m6sw2YaDrAY6pgHhIi++nI3I3PMn7rlWGtfHhymsEvuR9F/fRzY8QaOjq5cQIk5NhekQxxx0S7Rf9jgH9kzIL4iiMEyGK2CRQ/0mpzWalva5ZLxNSJZaGthynu4RBFYPqg5i5q5b8yTbq2km6+M75XnGDlGo71CPaIKvDSIdtdWG6RI0F5hkRc9DWj69qOa1CUgcc9YLa+CPtvWXd99wPjPepqm5/EHfb+NAh/5qYYo1"
+        
+    - name: Configure AWS Credentials
+      run: |
         aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws configure set default.region us-east-1
