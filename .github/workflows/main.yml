@@ -45,7 +45,7 @@ jobs:
       run: zip -r mi-lambda-function.zip main.js
 
     - name: Terraform Plan
-      run: terraform plan -y
+      run: terraform plan -auto-approve
 
     - name: Terraform Apply
       run: terraform apply -auto-approve
